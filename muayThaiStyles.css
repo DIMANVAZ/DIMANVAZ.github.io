@@ -9,6 +9,11 @@
     src: url("./Res/usuzi.ttf") format("truetype");
 }
 
+@font-face {
+    font-family:Eurostyle;
+    src: url("./Res/eurostyle.ttf") format("truetype");
+}
+
 html, body {
     width:100%;
     background-color: #aca77c;
@@ -22,15 +27,15 @@ header {
     margin-bottom:1%;
 }
 
-.addAndCallContainer {
+.addAndCallContainer { /* содержит кнопку звонка и адресную кнопку*/
     display: flex;
     flex-direction: row;
 }
 
-.addAndCallContainer a, .addAndCallContainer div {
+.addAndCallContainer a, .addAndCallContainer div { /*---обе кнопки */
     text-align: center;
     width: 50%;
-    height: 25vh;
+    height: 30vh;                  /*---------высота кнопок------------------*/
     display: flex;
     justify-content:center;
     align-items:center;
@@ -46,7 +51,7 @@ header {
 
 .addAndCallContainer a {
     background-color: #151515;
-    font-size: 1.3rem;
+     font-size: 1.3rem;
     text-decoration: none;
     color: 	#fdfdfd;
     margin-right: 0.5%;
@@ -57,6 +62,11 @@ blockquote {
     justify-content:center;
     align-items:center;
     margin-bottom: 1%;
+}
+
+main img {
+    width: 100%;
+    width: 100vw;
 }
 
 footer .address {
@@ -72,13 +82,57 @@ span {
     color: #aca77c;
 }
 
-@media only screen and (max-width: 480px) {
+header img {
+    width: 100%;
+    height: auto;
+}
 
-    header img {
-        width: 100%;
-        height: auto;
+section {  /*--------------------секция с тренером--------------*/
+    background-image: url("./Res/fon6.png");
+
+    margin-bottom: 1%;
+}
+
+section span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+h1, h2, p {
+    font-family: Eurostyle;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: 	#fdfdfd;
+    text-align: center;
+    margin-top: 6%;
+}
+
+h2 {
+    font-size: 1.15rem;
+    margin-top: 2%;
+}
+
+p {
+    font-size: 1rem;
+}
+/* .trainerInfo img {
+    opacity: 0.5;
+} */
+
+
+
+@media only screen and (max-width: 480px) { /*========= мобилы ====================*/
+    .addAndCallContainer a, .addAndCallContainer div, span{
+        font-size: 0.75rem;
+        /* color: #FF6600; */
     }
 
-
-
+    .addAndCallContainer a, .addAndCallContainer div { /*-------обе кнопки------------*/
+    height: 10vh;
+    }
 }
+/*========= ======================================================== ====================*/
