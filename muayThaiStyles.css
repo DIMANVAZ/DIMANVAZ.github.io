@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:Usuzi;
+    src: url("./Res/usuzi.ttf") format("truetype");
+}
+
+html, body {
+    width:100%;
+    background-color: #aca77c;
+}
+
+header {
+    width:100vw;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:1%;
+}
+
+.addAndCallContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.addAndCallContainer a, .addAndCallContainer div {
+    text-align: center;
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.addAndCallContainer div{
+    background-color: #151515;
+    font-size: 1.3rem;
+    font-family:Usuzi;
+    margin-left: 0.5%;
+    color: 	#fdfdfd;
+}
+
+.addAndCallContainer a {
+    background-color: #151515;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: 	#fdfdfd;
+    margin-right: 0.5%;
+}
+
+blockquote {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 1%;
+}
+
+footer .address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address i {
+    margin-bottom: 5%;
+}
+
+span {
+    color: #aca77c;
+}
+
+@media only screen and (max-width: 480px) {
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+}
