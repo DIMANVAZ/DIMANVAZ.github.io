@@ -3,7 +3,7 @@ zvukGong.src = "./Res/gong.mp3";
 
 let callButton = document.getElementById("callButton");
 callButton.onclick = function(){
-    zvukGong.volume = 0.2;
+    zvukGong.volume = 0.5;
     zvukGong.play();
 }
 
